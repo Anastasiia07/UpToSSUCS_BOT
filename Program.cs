@@ -484,7 +484,7 @@ namespace TelegramBOT_SSU {
         }
       };
     }
-    // как ниже для теста
+
     private static void GoToChooseSubjects(string chat_id) {
       for (int i = 0; i < indexList.Count; i++) {
         if (indexList[i].Chat_id.Equals(chat_id)) {
@@ -667,12 +667,7 @@ namespace TelegramBOT_SSU {
               CreateSubject(2021, helper.Get(column: "B", row: i), helper.Get(column: "H", row: i),
                   CheckValueExcel(helper.Get(column: "F", row: i)));
             }
-            //helper.Save();
           }
-          //тут тестить
-          //helper.Set(column: "A", row: 1, data: "g2343254");
-          //helper.Set(column: "B", row: 1, data: DateTime.Now);
-          //helper.Save();
         }
       } catch (Exception ex) { Console.WriteLine(ex.Message); }
     }
